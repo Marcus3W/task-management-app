@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+header {
+  background-color: #3498db;
+  padding: 1rem;
+}
+header h1 {
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+}
+
+.task-input {
+  padding: 2rem;
+}
+.task-input label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.task-input input[type=text],
+.task-input input[type=date],
+.task-input textarea,
+.task-input select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+.task-input button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #2c3e50;
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.task-input button:hover {
+  background-color: #1a252f;
+}
+
+.task-filters {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #f5f5f5;
+}
+.task-filters label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.task-filters select,
+.task-filters input[type=text] {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.task-list {
+  padding: 1rem;
+}
+.task-list ul {
+  list-style-type: none;
+}
+.task-list li {
+  background-color: #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.task-list li .task-info {
+  flex: 1;
+}
+.task-list li .task-info .task-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.task-list li .task-info .task-description {
+  font-size: 1rem;
+  color: black;
+  margin-bottom: 1rem;
+}
+.task-list li .task-info .task-metadata {
+  font-size: 0.9rem;
+  color: black;
+}
+.task-list li .task-info .task-metadata span {
+  margin-right: 1rem;
+}
+.task-list li button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #2c3e50;
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 1rem;
+}
+.task-list li button:hover {
+  background-color: #1a252f;
+}
+.task-list .task-item.completed .task-title,
+.task-list .task-item.completed .task-description,
+.task-list .task-item.completed .task-metadata {
+  text-decoration: line-through;
+  color: black;
+}
+.task-list .task-item.completed .task-title .task-description,
+.task-list .task-item.completed .task-description .task-description,
+.task-list .task-item.completed .task-metadata .task-description {
+  text-decoration: line-through;
+}
+
+/*# sourceMappingURL=styles.css.map */
